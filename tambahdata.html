@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistem Informasi Laundy</title>
+
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/metisMenu.css" rel="stylesheet">
+    <link href="assets/css/sb-admin-2.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/css/tampilan.css">
+</head>
+<body>
+	<div class="container">
+	<div class="row">
+		<div class="col-md-12" id="kepala">
+			<div id="merk">
+				<img class="logo" src="image/logo.png" alt="Logo Produk">
+			</div>
+			<div id="header" class="judul">
+				<h2>SISTEM INFORMASI LAUNDRY</h2>
+				<h4>Ekspresikan Kenyamanan Pakaian Anda Bersama Kami</h4>
+			</div>
+		</div>
+
+		<div class="navi" id="primary-navi-wrap">
+			<ul>
+		        <li class="home"><a href="homeA.html">Home</a></li>
+		        <li class="transakasi"><a href="transaksi.html">Transaksi</a></li>
+		        <li class="user"><a href="user.html">User</a></li>
+		        <li class="layanan"><a href="layanan.html">Layanan</a></li>
+		        <li class="pakaian"><a href="pakaian.html">Pakaian</a></li>
+		        <li class="keuangan"><a href="keuangan.html">Keuangan</a></li>
+		        <li class="gantirugi"><a href="gantirugi.html">Ganti Rugi</a></li>
+		        <li class="pelanggan"><a href="pelanggan.html">Pelanggan</a></li>
+			</ul>
+    	</div>
+
+    	<div id="content">
+    	<!--dropdown start-->
+		    <nav class="navbar-static-top" style="margin-bottom: 0">
+		        <ul class="nav navbar-top-links navbar-right">
+		            <li class="dropdown">
+		                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+		                    <i class="fa fa-user fa-fw"></i> Admin <i class="fa fa-caret-down"></i>
+		                </a>
+		                <ul class="dropdown-menu dropdown-user">
+			                <li>
+			                    <a href="profileA.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> User Profile</a>
+			                </li>
+			                <li>
+			                    <a href="index.html"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Log Out</a>
+			                </li>
+		           	    </ul>
+		            </li>
+		        </ul>
+		    </nav>
+		<!--dropdown end-->
+			<div class="box">
+				<h3>Input Data Ganti Rugi</h3>
+				<table>
+					<form action="gantirugi.html" method="post">
+			            <div class="control-group">
+			                <label for="kd-transaksi">Kode Transaksi</label>
+			                : <input type="text" name="kd-transaksi" id="kd-transaksi" value="L0967" required>
+			            </div>
+
+			            <div class="control-group">
+			            	<label for="tanggal">Tanggal Ambil</label>
+			            	:<input type="date" name="tanggal" id="tanggal" required>
+			            </div>
+
+			            <div class="control-group">
+			                <label class="drop" for="gantirugi">Hak Akses</label>
+			                : <select name="gantirugi" id="gantirugi">
+			                	<option>--Ganti Rugi--</option>
+			                	<option value="1">Hilang</option>
+			                	<option value="2">Rusak</option>
+			                </select>
+			            </div>
+
+			            <div class="control-group">
+			                <label for="harga">Harga</label>
+			                : <input type="text" name="harga" id="harga" value="Rp " required>
+			            </div>
+
+			            <input type="submit" value="Simpan">
+			    </form>
+				</table>
+			</div>
+		</div>
+
+		<div id="footer">
+				<span>
+					© 2017 Sistem Informasi Laundry by CISFO
+				</span>
+		</div>
+	</div>
+	</div>
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script>
+	    function hanyaAngka(evt) {
+		  var charCode = (evt.which) ? evt.which : event.keyCode
+		  if (charCode > 31 && (charCode < 13 || charCode > 57))
+		    	return false;
+			return true;
+		}
+	</script> 
+    
+</body>
+</html>

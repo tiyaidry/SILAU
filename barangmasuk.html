@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistem Informasi Laundy</title>
+
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/metisMenu.css" rel="stylesheet">
+    <link href="assets/css/sb-admin-2.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/css/tampilan.css">
+</head>
+<body>
+	<div class="container">
+	<div class="row">
+		<div class="col-md-12" id="kepala">
+			<div id="merk">
+				<img class="logo" src="image/logo.png" alt="Logo Produk">
+			</div>
+			<div id="header" class="judul">
+				<h2>SISTEM INFORMASI LAUNDRY</h2>
+				<h4>Ekspresikan Kenyamanan Pakaian Anda Bersama Kami</h4>
+			</div>
+		</div>
+
+		<div class="navi" id="primary-navi-wrap">
+			<ul>
+		        <li class="home"><a href="homeG.html">Home</a></li>
+		        <li class="masuk"><a href="barangmasuk.html">Barang Masuk</a></li>
+		        <li class="keluar"><a href="barangkeluar.html">Barang Keluar</a></li>
+		        <li class="stok"><a href="stok.html">Stok Barang</a></li>
+		        <li class="keuangan"><a href="pengeluaran.html">Keuangan</a></li>
+			</ul>
+    	</div>
+
+    	<div id="content">
+    	<!--dropdown start-->
+		    <nav class="navbar-static-top" style="margin-bottom: 0">
+		        <ul class="nav navbar-top-links navbar-right">
+		            <li class="dropdown">
+		                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+		                    <i class="fa fa-user fa-fw"></i> Kepala Gudang <i class="fa fa-caret-down"></i>
+		                </a>
+		                <ul class="dropdown-menu dropdown-user">
+			                <li>
+			                    <a href="profileG.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> User Profile</a>
+			                </li>
+			                <li>
+			                    <a href="index.html"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Log Out</a>
+			                </li>
+		           	    </ul>
+		            </li>
+		        </ul>
+		    </nav>
+		<!--dropdown end-->
+			<div class="box2">
+				<h2>Data Barang Masuk</h2>
+				<form action="november.html" method="post">
+					<div align="center">
+			            <label for="filter">Filter</label>
+			        		<select name="jlayanan" id="jlayanan">
+			                	<option>--bulan--</option>
+			                	<option value="1">Januari</option>
+			                	<option value="2">Febuari</option>
+			                	<option value="3">Maret</option>
+			                	<option value="4">April</option>
+			                	<option value="5">Mei</option>
+			                	<option value="6">Juni</option>
+			                	<option value="7">Juli</option>
+			                	<option value="8">Agustus</option>
+			                	<option value="9">September</option>
+			                	<option value="10">Oktober</option>
+			                	<option value="11">November</option>
+			                	<option value="12">Desember</option>
+			                </select>
+			            	<input type="text" name="tahun" placeholder="Tahun">
+			            	<a href="november.html">
+								<button type="button" class="btn-sm btn-info"">
+									<span class="glyphicon glyphicon-search"></span></button>
+							</a>
+			        </div>
+				</form>
+				<h3>Januari 2017</h3>
+				<div id="btn">
+					<a href="tambahbarang.html">
+						<button type="button" class="btn btn-primary">Tambah Barang Masuk
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</a>
+				</div>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>No.</th>
+							<th>Kode Barang</th>
+							<th>Nama Barang</th>
+							<th>Banyak (kotak)</th>
+							<th>Tanggal Masuk</th>
+							<th>Harga / kotak</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>LG8598</td>
+							<td>Pewangi A</td>
+							<td>2</td>
+							<td>01/01/2017</td>
+							<td>Rp 120.000,-</td>
+						</tr>
+
+						<tr>
+							<td>2</td>
+							<td>LG0943</td>
+							<td>Pewangi B</td>
+							<td>2</td>
+							<td>01/01/2017</td>
+							<td>Rp 120.000,-</td>
+						</tr>
+
+						<tr>
+							<td>3</td>
+							<td>LG7546</td>
+							<td>Detergen A</td>
+							<td>3</td>
+							<td>01/01/2017</td>
+							<td>Rp 165.000,-</td>
+						</tr>
+						
+						<tr>
+							<td>4</td>
+							<td>LG8561</td>
+							<td>Detergen B</td>
+							<td>2</td>
+							<td>01/01/2017</td>
+							<td>Rp 137.000,-</td>
+						</tr>
+
+						<tr>
+							<td>5</td>
+							<td>LG8537</td>
+							<td>Pelembut Pakaian</td>
+							<td>4</td>
+							<td>01/01/2017</td>
+							<td>Rp 156.000,-</td>
+						</tr>
+
+						<tr>
+							<td colspan="5" bgcolor="#86B4CC"><font color="white">Total Pengeluaran</font></td>
+							<td bgcolor="#86B4CC"><font color="white">Rp 493.000,-</font></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div id="footer">
+				<span>
+					© 2017 Sistem Informasi Laundry by CISFO
+				</span>
+		</div>
+	</div>
+	</div>
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    
+</body>
+</html>

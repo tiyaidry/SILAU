@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistem Informasi Laundy</title>
+
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/metisMenu.css" rel="stylesheet">
+    <link href="assets/css/sb-admin-2.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/css/tampilan.css">
+</head>
+<body>
+	<div class="container">
+	<div class="row">
+		<div class="col-md-12" id="kepala">
+			<div id="merk">
+				<img class="logo" src="image/logo.png" alt="Logo Produk">
+			</div>
+			<div id="header" class="judul">
+				<h2>SISTEM INFORMASI LAUNDRY</h2>
+				<h4>Ekspresikan Kenyamanan Pakaian Anda Bersama Kami</h4>
+			</div>
+		</div>
+
+		<div class="navi" id="primary-navi-wrap">
+			<ul>
+		        <li class="home"><a href="homeK.html">Home</a></li>
+		        <li class="transakasi"><a href="transaksiK.html">Transaksi</a></li>
+		        <li class="user"><a href="rekapdata.html">Rekap Data</a></li>
+			</ul>
+    	</div>
+
+    	<div id="content">
+    	<!--dropdown start-->
+		    <nav class="navbar-static-top" style="margin-bottom: 0">
+		        <ul class="nav navbar-top-links navbar-right">
+		            <li class="dropdown">
+		                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+		                    <i class="fa fa-user fa-fw"></i> Kasir <i class="fa fa-caret-down"></i>
+		                </a>
+		                <ul class="dropdown-menu dropdown-user">
+			                <li>
+			                    <a href="profileK.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> User Profile</a>
+			                </li>
+			                <li>
+			                    <a href="index.html"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Log Out</a>
+			                </li>
+		           	    </ul>
+		            </li>
+		        </ul>
+		    </nav>
+		<!--dropdown end-->
+			<div class="box">
+				<h3>Masukan Kode Transaksi</h3>
+					<div class="control-group">
+			            <label for="kd-transaksi">Kode Transaksi</label>
+			            	: <input type="text" required>
+			            	<div class="btn-group" role="group" aria-label="true">
+							 	<button type="button" class="btn btn-default" id="telp">
+							 		<a href="struk.html"><span class="glyphicon glyphicon-search"></span></a>
+							 	</button>
+							</div>
+			        </div>
+					<table class="table" id="tabel">
+						<tr>
+							<td>Kode Transaksi</td>
+							<td>L001</td>
+						</tr>
+
+						<tr>
+							<td>Nama</td>
+							<td>Rara Ningtias</td>
+						</tr>
+						<tr>
+							<td>Tanggal Bayar</td>
+							<td>4 Januari 2017</td>
+						</tr>
+						<tr>
+							<td>Total</td>
+							<td>Rp 24.000,-</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>
+								<a href="status.html">Status Transaksi</a>
+							</td>
+						</tr>
+					</table>
+				<button type="button" class="btn btn-success">
+					<a href="rekapdata.html"><font color="white">Sudah Diambil</font></a>
+				</button>
+			</div>
+		</div>
+
+		<div id="footer">
+				<span>
+					© 2017 Sistem Informasi Laundry by CISFO
+				</span>
+		</div>
+	</div>
+	</div>
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    
+</body>
+</html>
