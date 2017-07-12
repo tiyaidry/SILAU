@@ -1,4 +1,15 @@
-
+<body>
+	<div class="container">
+	<div class="row">
+		<div class="col-md-12" id="kepala">
+			<div id="merk">
+				<img class="logo" src="image/logo.png" alt="Logo Produk">
+			</div>
+			<div id="header" class="judul">
+				<h2>SISTEM INFORMASI LAUNDRY</h2>
+				<h4>Ekspresikan Kenyamanan Pakaian Anda Bersama Kami</h4>
+			</div>
+		</div>
 
 		<div class="navi" id="primary-navi-wrap">
 			<ul>
