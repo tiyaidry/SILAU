@@ -11,16 +11,16 @@ class View
 
 	function __construct()
 	{
-		include_once 'template/navigasi.php';
-		include_once 'template/header.php';
-		include_once 'template/sidebar.php';
+		include_once 'templatelayanan/navigasi.php';
+		include_once 'templatelayanan/header.php';
+		include_once 'templatelayanan/sidebar.php';
 		// include_once 'content.php';
 		
 	}
 
 	protected function end()
 	{
-		include 'template/footer.php';
+		include 'templatelayanan/footer.php';
 	}
 	
 }
