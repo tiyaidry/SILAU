@@ -4,7 +4,7 @@
 */
 include_once 'Controller.php';
 
-class ControlManager extends Controller
+class ControlTransaksi extends Controller
 {
 	
 	public function cariDataPelanggan()
